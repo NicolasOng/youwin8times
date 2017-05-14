@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle Site</title>
+    <link rel="stylesheet" type="text/css" href="style-sheet.css">
+</head>
+<body id="theBody">
+<div id="rowHolder">
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div class="Y" id="yBranchOne" onclick="onYButtonPush('Y')"></div>
+            <div class="Y" id="yBranchTwo" onclick="onYButtonPush('Y')"></div>
+            <div class="Y" id="yTrunk" onclick="onYButtonPush('Y')"></div>
+        </div>
+    </div>
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div id="oHole"></div>
+            <div class="O" id="oBody" onclick="onOButtonPush('O')"></div>
+        </div>
+    </div>
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div class="U" id="uBody1" onclick="onUButtonPush('U')"></div>
+            <div id="uHole1"></div>
+            <div id="uHole2"></div>
+            <div class="U" id="uBody2" onclick="onUButtonPush('U')"></div>
+        </div>
+    </div>
+    <div id="spaceBox"></div>
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div class="W" id="wSegment1" onclick="onWButtonPush('W')"></div>
+            <div class="W" id="wSegment2" onclick="onWButtonPush('W')"></div>
+            <div class="W" id="wSegment3" onclick="onWButtonPush('W')"></div>
+            <div class="W" id="wSegment4" onclick="onWButtonPush('W')"></div>
+        </div>
+    </div>
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div class="I" id="iTop" onclick="onIButtonPush('I')"></div>
+            <div class="I" id="iMid" onclick="onIButtonPush('I')"></div>
+            <div class="I" id="iBottom" onclick="onIButtonPush('I')"></div>
+        </div>
+    </div>
+    <div class="letterBox">
+        <div class="letterEncasement">
+            <div class="N" id="nPart1" onclick="onNButtonPushStart('N')"></div>
+            <div class="N" id="nPart2" onclick="onNButtonPushStart('N')"></div>
+            <div class="N" id="nPart3" onclick="onNButtonPushStart('N')"></div>
+        </div>
+    </div>
+</div>
+<div id="buttonHolder">
+    <div id="button" onclick="onButtonPush()"></div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
